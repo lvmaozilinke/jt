@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" >
-    <!--定义标签选择器  -->
-    <item 
-        android:state_selected="true"
-        android:drawable="@drawable/tab_bg">
-    </item>
-
-</selector>
