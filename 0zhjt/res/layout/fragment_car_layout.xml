@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    
+    <Button
+        android:id="@+id/car_speed_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/carmanager_bg"
+        android:gravity="center"
+        android:text="@string/car_speed_str"
+        android:textSize="30sp" />
+
+    
+    <Button
+        android:id="@+id/car_action_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/carmanager_bg"
+        android:gravity="center"
+        android:text="@string/car_action_str"
+        android:textSize="30sp" />
+
+    
+    <Button
+        android:id="@+id/car_account_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/carmanager_bg"
+        android:gravity="center"
+        android:text="@string/car_account_str"
+        android:textSize="30sp" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:background="#000000"/>
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="590dp"
+        android:layout_height="wrap_content">
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d6d6d6"
+          
+            android:gravity="center"
+            android:text="@string/car_search_record_str"
+            android:textSize="35sp"
+            />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+        <TextView 
+            android:id="@+id/tv_no_record_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_recharge_record"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+        
+        
+        <include 
+            layout="@layout/item_head_recharge_record"
+            />
+        
+        <ListView 
+            android:layout_width="590dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/car_recharge_record_listview">
+            
+        </ListView>
+        
+            <Button 
+                android:id="@+id/car_return_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/return_str"
+                
+                android:textSize="25sp"/>
+
+        
+    </LinearLayout>
+
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1dp"
+        android:background="#000000"/>
+</LinearLayout>
