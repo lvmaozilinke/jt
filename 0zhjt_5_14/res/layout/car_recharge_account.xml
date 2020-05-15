@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="498dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+    
+        <TextView 
+            android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#d6d6d6"
+           android:paddingLeft="60dp"
+           android:text="@string/car_recharge_acount_str"
+           android:textSize="35sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal" >
+            
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:text="@string/car_id_account_str"
+		    android:textColor="#000000"
+		    android:textSize="25sp"/>
+		<TextView 
+		    android:id="@+id/car_id_dialog_account_recharge"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:text=""
+		    android:textColor="#000000"
+		    android:textSize="25sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:text="@string/car_recharge_JE_str"
+		    android:textColor="#000000"
+		    android:textSize="25sp"/>
+		
+		<EditText 
+		    android:id="@+id/edt_dialog_account_charge_money"
+		    android:layout_width="200dp"
+		    android:layout_height="50dp"
+		    android:textColor="#000000"
+		    android:inputType="number"
+		    android:maxLength="3"/>
+		
+			<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:text="@string/car_show_JE_str2"
+		    android:textColor="#000000"
+		    android:textSize="25sp"/>
+		
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button 
+                android:id="@+id/bt_dialog_account_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/car_recharge_strs"/>
+            <Button 
+                android:id="@+id/bt_dialog_account_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/car_recharge_cancel_str"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1dp"
+        android:background="#000000" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+</LinearLayout>
+</LinearLayout>

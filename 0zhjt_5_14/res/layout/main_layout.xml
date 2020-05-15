@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 要显示的主页面，要引入创建好的标题栏布局-->
+    <include layout="@layout/title_layout"/>
+    
+    <!--  定义工作区-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/main_content">
+    </FrameLayout>
+    
+   <!--  定义界面下方的控件容器-->
+   <!--  此处的id号调用系统所给的-->
+    <android.support.v4.app.FragmentTabHost
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@android:id/tabhost">
+        
+    </android.support.v4.app.FragmentTabHost>
+    
+
+</LinearLayout>
