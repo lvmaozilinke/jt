@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="15dp"
+        android:text="@string/life_indicator_str"
+        android:textColor="#4795cd"
+        android:textSize="30sp"/>
+    
+    <ImageView 
+        android:layout_width="780dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#f5f5f5"/>
+    
+    
+    
+    
+    <LinearLayout 
+        android:layout_width="780dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#daedff"
+            android:orientation="horizontal"
+            >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon101"
+                
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/sunlight_title"
+                android:textColor="#3398cc"
+                
+                />
+              </LinearLayout> 
+            
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="15dp"
+              android:orientation="vertical">
+               <TextView 
+                 android:id="@+id/light_life_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="中等(1000)"
+                android:textColor="#5da5cf"
+                 android:textSize="20dp"
+                
+                />
+                <TextView 
+                android:id="@+id/light_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="false"
+                android:text="@string/sunlight_tip2"
+                android:textColor="#a3a4b2"
+                android:textSize="10sp"
+                
+                
+                />
+              
+              
+              
+        
+           </LinearLayout>
+            
+            
+        </LinearLayout>
+        
+         <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#daedff"
+            android:orientation="horizontal"
+            >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon102"
+                
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/temp_title"
+                android:textColor="#3398cc"
+                
+                />
+             </LinearLayout> 
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="15dp"
+              android:orientation="vertical">
+               <TextView 
+                 android:id="@+id/temp_life_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="较易发(5)"
+                android:textColor="#5da5cf"
+                android:textSize="20dp"
+                />
+                <TextView 
+                android:id="@+id/temp_tip_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="false"
+                android:text="@string/temp_tip1"
+                android:textColor="#a3a4b2"
+                android:textSize="10sp"
+                
+                
+                />
+              
+             
+               </LinearLayout> 
+          </LinearLayout> 
+          
+            <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#daedff"
+            android:orientation="horizontal"
+            >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon103"
+                
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/clothes_title"
+                android:textColor="#3398cc"
+                
+                />
+                 </LinearLayout> 
+            
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="15dp"
+              android:orientation="vertical">
+               <TextView 
+                 android:id="@+id/clothes_life_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="舒适(2)"
+                android:textColor="#5da5cf"
+                android:textSize="20dp"
+                />
+                <TextView 
+                android:id="@+id/clothes_tip_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="false"
+                android:text="@string/clothes_tip2"
+                android:textColor="#a3a4b2"
+                android:textSize="10sp"
+                
+                
+                />
+              
+              
+               </LinearLayout> 
+     
+    
+          </LinearLayout> 
+          
+        
+        
+    </LinearLayout>
+    
+    
+    
+    
+    <!-- ********************************************************** -->
+    
+    
+    
+    
+    
+    
+    
+     <LinearLayout 
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+      <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#daedff"
+            android:orientation="horizontal"
+            >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon104"
+                
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/sport_title"
+                android:textColor="#3398cc"
+                
+                />
+                </LinearLayout> 
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="15dp"
+              android:orientation="vertical">
+               <TextView 
+                 android:id="@+id/sports_life_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="适宜(2100)"
+                android:textColor="#5da5cf"
+                 android:textSize="20dp"
+                
+                />
+                <TextView 
+                android:id="@+id/sport_tip_nnumber_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="false"
+                android:text="@string/sport_tip1"
+                android:textColor="#a3a4b2"
+                android:textSize="10sp"
+                
+                
+                />
+              
+              
+              
+      
+           </LinearLayout>
+            
+            
+        </LinearLayout>
+        
+       <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#daedff"
+            android:orientation="horizontal"
+            >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon105"
+                
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/air_title"
+                android:textColor="#3398cc"
+                
+                />
+                  </LinearLayout> 
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="15dp"
+              android:orientation="vertical">
+               <TextView 
+                 android:id="@+id/pm_life_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="良(10)"
+                android:textColor="#5da5cf"
+                android:textSize="20dp"
+                />
+                <TextView 
+                android:id="@+id/pm_tip_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="false"
+                android:text="@string/air_tip1"
+                android:textColor="#a3a4b2"
+                android:textSize="10sp"
+                
+                
+                />
+              
+        
+               </LinearLayout> 
+          </LinearLayout> 
+          
+         
+        
+        
+    </LinearLayout>
+    
+    
+    
+    
+    
+    
+    </LinearLayout>
+
