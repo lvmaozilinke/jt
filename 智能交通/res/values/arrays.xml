@@ -47,5 +47,9 @@
 	<item>绿灯升序</item>
 </string-array>
 
+<string-array name="ratetype_str">
+<item name="count_str">次</item>
+<item name="hour_str">小时</item>
+</string-array>
     
 </resources>

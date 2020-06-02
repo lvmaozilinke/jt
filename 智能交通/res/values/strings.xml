@@ -91,7 +91,12 @@
 		 <string name= "sunlight_level3">强 (81$s)</string>   
 		
 		
-		
+	<!--停车场管理字符串定义-->
+	<string name="setparkrate_str">停车场费率设置</string>	
+	<string name="searchparkrate_str">停车场费率查询</string>
+	<string name="searchparkfree_str">空车位查询</string>
+	<string name="selectratetype_str">选择费率类型</string>
+	<string name="ratejine_str">费率金额(0-99)</string>
 		
 
 </resources>

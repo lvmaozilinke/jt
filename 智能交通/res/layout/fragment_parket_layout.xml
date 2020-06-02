@@ -1,13 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:gravity="center_horizontal"
     android:orientation="vertical" >
-        <TextView 
+
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="停车场Fragment"
-        android:textSize="20sp"/>
-    
+        android:text="@string/setparkrate_str"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/selectratetype_str" />
+
+        <Spinner
+            android:id="@+id/Select_RateType_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:entries="@array/ratetype_str" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/Rate_Je_Et"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:maxLength="2"
+            android:hint="@string/ratejine_str" />
+
+        <Button
+            android:id="@+id/Set_Rate_Btn"
+            android:layout_width="wrap_content"`
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="设置" />
+             </LinearLayout>
+    
+   
+        <LinearLayout
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"  >
+
+            <Button
+                android:id="@+id/search_Rate_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/searchparkrate_str" />
+
+            <Button
+                android:id="@+id/search_empty_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/searchparkfree_str" />
+   </LinearLayout>
+  </LinearLayout>

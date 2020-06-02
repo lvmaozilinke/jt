@@ -21,7 +21,7 @@ public class ParketFragment extends Fragment {
 			Bundle savedInstanceState) {
 
 		return inflater.inflate
-				(R.layout.life_indicater__layout, container, false);
+				(R.layout.fragment_parket_layout, container, false);
 		}
 	
 
