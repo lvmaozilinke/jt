@@ -123,11 +123,28 @@ public void getStationInfo(int stationId,Listener<JSONObject>listener,ErrorListe
 			,jsonObject
 			,listener
 			,errorlistener));
+	}
+
+	public void setParkRate(String Ratetype, int Money,
+			Listener<JSONObject> listener, ErrorListener errorListener) {
+		JSONObject jsonObject = new JSONObject();
+		try {
+			jsonObject.put("RateType", Ratetype);
+			jsonObject.put("Money", Money);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		mQueue.add(new JsonObjectRequest(Request.Method.POST, mServerIp
+				+ "SetParkRate.do", jsonObject, listener, errorListener));
+	}
+
+	public void GetParkRate(Listener<JSONObject>listener,ErrorListener errorlistener){
+		mQueue.add(new JsonObjectRequest(Request.Method.POST,
+				mServerIp+"GetParkRate.do",
+				listener,
+				errorlistener));}
+	
 	
 
+
 }
-	
-}
-
-
-
