@@ -144,6 +144,8 @@ public void getStationInfo(int stationId,Listener<JSONObject>listener,ErrorListe
 				listener,
 				errorlistener));}
 	
+	public void GetParkFree(Listener<JSONObject>listener,ErrorListener errorlistener){
+		mQueue.add(new JsonObjectRequest(Request.Method.POST,mServerIp+"GetParkFree.do",listener,errorlistener));}
 	
 
 
