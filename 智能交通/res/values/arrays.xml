@@ -51,5 +51,14 @@
 <item name="count_str">次</item>
 <item name="hour_str">小时</item>
 </string-array>
+
+
+
+<string-array name="RoadIds_str">
+<item >线路1</item>
+<item >线路2</item>
+<item >线路3</item>
+<item >线路4</item>
+</string-array>
     
 </resources>

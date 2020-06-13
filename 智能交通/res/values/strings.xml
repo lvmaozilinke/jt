@@ -98,6 +98,9 @@
 	<string name="selectratetype_str">选择费率类型</string>
 	<string name="ratejine_str">费率金额(0-99)</string>
 		
+	<string name="Select_RoadId_str">选择道路编号</string>
+	
+	
 
 </resources>
 
