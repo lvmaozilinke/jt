@@ -145,7 +145,26 @@ public void getStationInfo(int stationId,Listener<JSONObject>listener,ErrorListe
 				errorlistener));}
 	
 	public void GetParkFree(Listener<JSONObject>listener,ErrorListener errorlistener){
-		mQueue.add(new JsonObjectRequest(Request.Method.POST,mServerIp+"GetParkFree.do",listener,errorlistener));}
+		mQueue.add(new JsonObjectRequest(Request.Method.POST,mServerIp+"GetParkFree.do",listener,errorlistener));
+		
+	}
+	
+	public void GetRoadStatus(int roadId,Listener<JSONObject> listener,ErrorListener errorListener){
+		JSONObject jsonObject=new JSONObject();
+		try {
+			jsonObject.put("RoadId", roadId);
+			
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		mQueue.add(new JsonObjectRequest(Request.Method.POST,mServerIp+"GetRoadStatus.do", jsonObject,listener,errorListener));
+		
+		
+	}
+	
+	
+	
+	
 	
 
 

@@ -14,6 +14,7 @@ public final class R {
     }
     public static final class array {
         public static final int RoadIds_str=0x7f050005;
+        public static final int RoadStatus_array=0x7f050006;
         public static final int car_id_array=0x7f050002;
         public static final int leftmenu_str=0x7f050001;
         public static final int ratetype_str=0x7f050004;
@@ -63,13 +64,18 @@ public final class R {
         public static final int park=0x7f020019;
         public static final int rglight=0x7f02001a;
         public static final int road=0x7f02001b;
-        public static final int slidingmenu_bg=0x7f02001c;
-        public static final int tab_bg=0x7f02001d;
-        public static final int tap_item_bg=0x7f02001e;
-        public static final int title_bg=0x7f02001f;
-        public static final int traffic1=0x7f020020;
-        public static final int traffic2=0x7f020021;
-        public static final int traffic3=0x7f020022;
+        public static final int roadstatus1=0x7f02001c;
+        public static final int roadstatus2=0x7f02001d;
+        public static final int roadstatus3=0x7f02001e;
+        public static final int roadstatus4=0x7f02001f;
+        public static final int roadstatus5=0x7f020020;
+        public static final int slidingmenu_bg=0x7f020021;
+        public static final int tab_bg=0x7f020022;
+        public static final int tap_item_bg=0x7f020023;
+        public static final int title_bg=0x7f020024;
+        public static final int traffic1=0x7f020025;
+        public static final int traffic2=0x7f020026;
+        public static final int traffic3=0x7f020027;
     }
     public static final class id {
         public static final int CO2_tv=0x7f0a001c;
